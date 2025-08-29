@@ -1,0 +1,20 @@
+/*in class exercise 1 for CS201
+Aboubacar D'Almeida
+29-August-2025*/
+
+import java.util.*;
+
+public class exercise1 {
+    public static void main(String[] args) {
+        //input
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Enter a Fahrenheit temperature: ");
+        double fahrenheit = keyboard.nextDouble();
+        //process
+        double celsius = (fahrenheit - 32) * 5 / 9; //this will give a floating point because fahrenheit is a floating number which will cause the rest of the operation to be done using floating numbers
+        //output
+        System.out.printf("%.2f Fahrenheit is %.2f Celsius", fahrenheit, celsius);
+        //closing of program
+        keyboard.close();
+    }
+}
