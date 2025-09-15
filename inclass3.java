@@ -10,7 +10,7 @@ public class inclass3
 		System.out.println("Celsius" + "\t" + "Fahrenheit");
 		int celsius = 0; //couter is the same as celsius value, therefore it is not needed here.
 		for(; celsius <=20; celsius++){
-		    double fahrenheit = (1.8) * celsius + 32;
+		    double fahrenheit = (1.8) * celsius + 32;//this line can be calculated in the fahrenheit variable in line 14 as 1.8*celsius+32
 		    System.out.printf("%d\t%.1f \n", celsius, fahrenheit);//%d is integer number, %.1f is flloating number
 	    }
 	}
