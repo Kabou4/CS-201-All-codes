@@ -1,0 +1,52 @@
+/*Programming exercise 3 for CS201
+Aboubacar D'Almeida
+19-September-2025*/
+import java.util.*;
+public class programming3
+{
+	public static void main(String[] args) {
+		//input
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Enter a color: ");
+		char c = keyboard.next().charAt(0);
+		int r = 0, y = 0, b = 0, q = 0;
+		//Process + output
+	int i = 0;
+	for( ; ;i++)
+		if(c == 'r' || c == 'R'){
+		    r++;
+		    System.out.println(r + " red");
+		    c = keyboard.next().charAt(0);
+	}   else if(c == 'y' || c == 'Y'){
+	        y++;
+	        System.out.println(y + " yellow");
+	        c = keyboard.next().charAt(0);
+	}   else if (c == 'b' || c == 'B'){
+	        b++;
+	        System.out.println(b + " blue");
+	        c = keyboard.next().charAt(0);
+	}   else if(c == 'q') {
+	        break;
+	}   else {
+	        System.out.println("This is an invalid entry!");
+	        c = keyboard.next().charAt(0);
+	}
+    int t = r + y + b;
+    System.out.println(r + " red\n" + y + " yellow\n" + b + " blue");
+    if(r > y && r > b){
+        System.out.println("Red is the winner!!");
+    } else if (y > r && y > b){
+        System.out.println("Yellow is the winner!!");
+    } else if (b > r && b > y){
+        System.out.println("Blue is the winner");
+    } else if(r == y && r > b){
+        System.out.println("Red is the winner!!");
+    } else if(y > r && y == b){
+        System.out.println("Yellow is the winner!!");
+    } else if(b > y && r == b){
+        System.out.println("Blue is the winner!!");
+    }
+	System.out.println( t + " marbles in total!");
+	System.out.println("Program has been exited!");
+}
+}
